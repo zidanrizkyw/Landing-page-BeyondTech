@@ -60,7 +60,7 @@ function Home2() {
       </div>
 
       {/* Container for the images with proper sizing */}
-      <div className="overflow-hidden  py-7 md:py-5 ">
+      <div className="overflow-hidden animate-slide py-7 md:py-5 ">
         <div className="flex flex-wrap md:flex-nowrap lg:flex-nowrap justify-center items-center gap-5 lg:gap-8 w-full h-full">
           <div className="w-36 h-[75px] md:w-44 lg:w-96 lg:h-[125px] flex items-center">
             <img src={moneygram} alt="Moneygram" className="lg:object-contain w-full h-full" />
