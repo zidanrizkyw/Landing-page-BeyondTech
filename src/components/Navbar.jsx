@@ -48,18 +48,7 @@ function Navbar() {
               <li
                 key={item}
                 className="relative group hover:text-blue-500"
-                onMouseEnter={() => {
-                  if (item === "Personal") {
-                    setIsPersonalDropdownOpen(true);
-                  }
-                }}
-                onMouseLeave={() => {
-                  if (item === "Personal") {
-                    setTimeout(() => {
-                      setIsPersonalDropdownOpen(false);
-                    }, 200);
-                  }
-                }}
+                onClick={() => handleDropdownToggle(item)}
               >
                 <button className="focus:outline-none flex items-center">
                   {item}
@@ -71,7 +60,7 @@ function Navbar() {
                 </button>
 
                 {/* Dropdown for "Personal" */}
-                {item === "Personal" && isPersonalDropdownOpen && (
+                {item === "Personal" && activeDropdown === "Personal" && (
                   <div
                     className="sm:fixed lg:absolute md:left-5 mt-2 bg-white text-gray-800 p-5 w-[800px] h-auto rounded shadow-lg z-50"
                     onMouseEnter={() => {
@@ -207,7 +196,7 @@ function Navbar() {
                 </button>
 
                 {/* Mobile Dropdown Content */}
-                {activeDropdown === item && (
+                {item === "Personal" && activeDropdown === "Personal" && (
                   <div className="fixed bottom-32 left-0 w-full bg-white text-gray-800 p-5 rounded-t-lg shadow-lg z-30">
                     <div className="flex flex-col gap-y-3">
                       <h1 className="font-bold text-[#1B75BB]">
