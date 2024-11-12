@@ -29,7 +29,7 @@ function Home1() {
         </div>
 
         {/* Lingkaran yang hanya muncul di layar menengah ke atas */}
-        <div className="hidden md:flex justify-center w-[680px] h-[660px] absolute -right-56 top-20 border border-red-500 rounded-full z-0">
+        <div className="hidden md:flex justify-center w-[680px] h-[660px] absolute -right-56 top-24 border border-red-500 rounded-full z-0">
           <div className="bg-gradient-to-b from-[#EC2027] to-[#861216] w-full mt-7 ml-7 mb-7 mr-7 rounded-full"></div>
         </div>
       </div>

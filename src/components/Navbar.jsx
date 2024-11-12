@@ -88,7 +88,7 @@ function Navbar() {
                             <hr />
                           </div>
                           <div className="flex justify-between">
-                            <a href="www.google.com">
+                            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
                               <p>Kirim Uang {"(Domestik & International)"}</p>
                             </a>
                             <FontAwesomeIcon

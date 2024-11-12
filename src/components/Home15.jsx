@@ -13,7 +13,7 @@ function Home15() {
             assistance with our services, or want to provide feedback, we’re
             here to help.
           </p>
-          <button class="bg-[#EC2027] hover:bg-red-500 text-white py-2 px-4 rounded mt-5 w-full lg:w-auto">
+          <button className="bg-[#EC2027] hover:bg-red-500 text-white py-2 px-4 rounded mt-5 w-full lg:w-auto">
           Ask a Question
           </button>
         </div>

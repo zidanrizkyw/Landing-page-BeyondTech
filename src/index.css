@@ -9,6 +9,11 @@
   transition: all 0.2s ease-in-out;
 
 }
+
+html, body {
+  overflow-x: hidden;
+}
+
 .poppins-regular {
   font-family: "Poppins", sans-serif;
   font-weight: 400;

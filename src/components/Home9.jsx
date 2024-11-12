@@ -19,14 +19,14 @@ function Home9() {
           </div>
           
           {/* Konten Cara Lama dan Cara Baru */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10">
+          <div className="mb-20 grid grid-cols-1 md:grid-cols-2 gap-5 mt-10">
             <div className="text-center rounded h-full p-5 border-2 border-gray-300">
               <h1 className="text-lg font-bold text-[#505050]">Cara Lama</h1>
               <p className="text-sm text-[#505050] mt-2">
                 Detail mengenai cara lama proses transaksi.
               </p>
             </div>
-            <div className="text-center rounded h-full p-5 border-2 border-gray-300">
+            <div className=" text-center rounded h-full p-5 border-2 border-gray-300">
               <h1 className="text-lg font-bold text-[#505050]">Cara Baru</h1>
               <p className="text-sm text-[#505050] mt-2">
                 Detail mengenai cara baru proses transaksi yang lebih efisien.
