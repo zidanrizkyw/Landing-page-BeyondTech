@@ -23,7 +23,7 @@ function Navbar() {
 
   return (
     <div className="bg-white text-black fixed w-full z-20">
-      <div className=" flex items-center justify-between md:justify-start px-5 py-7 md:px-20">
+      <div className=" flex items-center justify-between md:justify-start px-4 py-7 lg:px-20">
         {/* Logo */}
         <div className="flex items-center">
           <img src={logo} alt="Logo" className="h-8 w-auto mr-7" />
@@ -39,7 +39,7 @@ function Navbar() {
 
         {/* Navbar List */}
         <ul
-          className={`flex-row md:flex-row md:flex space-y-4 md:space-y-0 space-x-0 md:space-x-7 text-sm ${
+          className={`ml-5 flex-row md:flex-row md:flex space-y-4 md:space-y-0 space-x-0 md:space-x-7 text-sm ${
             isMenuOpen ? "flex" : "hidden"
           } md:flex`}
         >
@@ -62,7 +62,7 @@ function Navbar() {
                 {/* Dropdown for "Personal" */}
                 {item === "Personal" && activeDropdown === "Personal" && (
                   <div
-                    className="sm:fixed lg:absolute md:left-5 mt-2 bg-white text-gray-800 p-5 w-[800px] h-auto rounded shadow-lg z-50"
+                    className="sm:fixed lg:absolute md:left-5 mt-2 bg-white text-gray-800 p-5 w-[700px] h-auto rounded shadow-lg z-50"
                     onMouseEnter={() => {
                       clearTimeout(window.dropdownTimeout);
                       setIsPersonalDropdownOpen(true);

@@ -60,31 +60,31 @@ function Home2() {
       </div>
 
       {/* Container for the images with proper sizing */}
-      <div className="overflow-hidden animate-slide py-7 md:py-5 ">
-        <div className="flex flex-wrap md:flex-nowrap lg:flex-nowrap justify-center items-center gap-5 lg:gap-8 w-full h-full">
-          <div className="w-36 h-[75px] md:w-44 lg:w-96 lg:h-[125px] flex items-center">
+      <div className="overflow-hidden  animate-slide py-7 md:py-5 ">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-8 lg:flex justify-center items-center md:gap-8 w-full h-full">
+          <div className="w-40 h-[100px] md:w-44 lg:w-96 lg:h-[125px] flex items-center ">
             <img src={moneygram} alt="Moneygram" className="lg:object-contain w-full h-full" />
           </div>
-          <div className="w-36 h-[35px] md:w-48 md:h-[30px]  lg:w-96 lg:h-[125px] flex items-center">
+          <div className="w-40 h-[25px] md:w-44  lg:w-96 lg:h-[125px] flex items-center">
             <img src={wsunion} alt="Western Union" className="lg:object-contain w-full h-full" />
           </div>
-          <div className="w-32 h-[35px] md:w-48 md:h-[30px] lg:w-96 lg:h-[125px] flex items-center">
+          <div className="w-36 h-[35px] md:w-44 lg:w-96 lg:h-[125px] flex items-center">
             <img src={transwap} alt="Transwap" className="lg:object-contain w-full h-full"/>
           </div>
-          <div className="w-32 h-[35px] md:w-52 md:h-[30px] lg:w-96 lg:h-[125px] flex items-center">
-            <img src={cimbniaga} alt="CIMB Niaga" className="lg:object-contain w-full h-full" />
+          <div className="w-36 h-[25px] md:w-44  lg:w-96 lg:h-[125px] flex items-center">
+            <img src={cimbniaga} alt="CIMB Niaga" className="lg:object-contain w-full h-full sm:ml-2 md:ml-0" />
           </div>
-          <div className="w-32 h-[75px] md:w-48 md:h-[75px] lg:w-64 lg:h-[125px] flex items-center">
+          <div className="w-32 h-[90px] md:w-40  lg:w-64 lg:h-[125px] flex items-center">
             <img src={bca} alt="BCA" className="lg:object-contain w-full h-full"/>
           </div>
-          <div className="w-32 h-[50px] md:w-48 md:h-[50px] lg:w-72 lg:h-[125px] flex items-center">
-            <img src={ria} alt="Ria" className="lg:object-contain w-full h-full"/>
+          <div className="w-40 h-[65px] md:w-44  lg:w-72 lg:h-[125px] flex items-center">
+            <img src={ria} alt="Ria" className="lg:object-contain w-full h-full sm:ml-2 md:ml-0"/>
           </div>
-          <div className="w-32 h-[35px] md:w-48 md:h-[30px] lg:w-72 lg:h-[125px] flex items-center">
-            <img src={topremit} alt="Topremit" className="lg:object-contain w-full h-full"/>
+          <div className="w-32 h-[35px] md:w-40  lg:w-72 lg:h-[125px] flex items-center">
+            <img src={topremit} alt="Topremit" className="lg:object-contain w-full h-full "/>
           </div>
-          <div className="w-32 h-[35px] md:w-48 md:h-[30px] lg:w-64 lg:h-[125px] flex items-center">
-            <img src={brdgx} alt="Brdgx" className="lg:object-contain w-full h-full"/>
+          <div className="w-32 h-[45px] md:w-36 lg:w-64 lg:h-[125px] flex items-center">
+            <img src={brdgx} alt="Brdgx" className="lg:object-contain w-full h-full sm:ml-6 md:ml-0"/>
           </div>
         </div>
       </div>

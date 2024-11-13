@@ -4,7 +4,7 @@ function Home1() {
   return (
     <div className="pt-20">
       <div className="flex flex-col md:flex-row justify-center items-center pt-10 z-0">
-        <div className="content-center max-w-[600px] pb-14">
+        <div className="content-center max-w-[600px] pb-14 md:ml-5 lg:ml-0">
           <h1 className="font-bold text-4xl lg:text-5xl  text-center md:text-left">
             <span className="text-[#EC2027]">Kirim</span>{" "}
             <span className="text-[#505050]">dan</span>{" "}
@@ -29,7 +29,7 @@ function Home1() {
         </div>
 
         {/* Lingkaran yang hanya muncul di layar menengah ke atas */}
-        <div className="hidden md:flex justify-center w-[680px] h-[660px] absolute -right-56 top-24 border border-red-500 rounded-full z-0">
+        <div className="hidden md:flex justify-center md:w-[580px] md:h-[580px] lg:w-[680px] lg:h-[660px] absolute -right-56 top-24 border border-red-500 rounded-full z-0">
           <div className="bg-gradient-to-b from-[#EC2027] to-[#861216] w-full mt-7 ml-7 mb-7 mr-7 rounded-full"></div>
         </div>
       </div>
