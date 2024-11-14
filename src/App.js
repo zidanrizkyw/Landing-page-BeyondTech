@@ -7,7 +7,7 @@ import Home5 from './components/Home5'
 import Home6 from './components/Home6'
 import Home7 from './components/Home7'
 import Home8 from './components/Home8'
-import Home9 from './components/Home9'
+// import Home9 from './components/Home9'
 import Home10 from './components/Home10'
 import Home11 from './components/Home11'
 import Home12 from './components/Home12'
@@ -28,7 +28,7 @@ function App() {
       <Home6/>
       <Home7/>
       <Home8/>
-      <Home9/>
+      {/* <Home9/> */}
       <Home10/>
       <Home11/>
       <Home12/>

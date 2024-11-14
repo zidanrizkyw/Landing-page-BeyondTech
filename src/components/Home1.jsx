@@ -5,21 +5,21 @@ function Home1() {
     <div className="pt-20">
       <div className="flex flex-col md:flex-row justify-center items-center pt-10 z-0">
         <div className="content-center max-w-[600px] pb-14 md:ml-5 lg:ml-0">
-          <h1 className="font-bold text-4xl lg:text-5xl  text-center md:text-left">
+          <h1 className="font-bold text-4xl lg:text-6xl  text-center md:text-left">
             <span className="text-[#EC2027]">Kirim</span>{" "}
             <span className="text-[#505050]">dan</span>{" "}
             <span className="text-[#EC2027]">Terima</span>
           </h1>
-          <h1 className="font-bold text-4xl lg:text-5xl mb-2 text-center md:text-left">
+          <h1 className="font-bold text-4xl lg:text-6xl mb-2 text-center md:text-left">
             <span className="text-[#EC2027]">Dana</span>{" "}
             <span className="text-[#505050]">Antar</span>{" "}
             <span className="text-[#505050]">Negara</span>
           </h1>
-          <h1 className="font-bold text-4xl lg:text-5xl mb-3 text-center md:text-left">
+          <h1 className="font-bold text-4xl lg:text-6xl mb-3 text-center md:text-left">
             <span className="text-[#EC2027]">Tanpa</span>{" "}
             <span className="text-[#EC2027]">Kendala</span>
           </h1>
-          <p className="text-sm lg:text-sm text-[#505050] text-center md:text-left">
+          <p className="text-base text-[#505050] text-center md:text-left">
             Hanya dengan satu kali klik, bisa kirim dan terima dana dalam
             hitungan menit tanpa dipersulit.
           </p>

@@ -2,7 +2,7 @@ import image28 from '../assets/image 28.png';
 import image29 from '../assets/image 29.png';
 import image27 from '../assets/image 27.png';
 import image30 from '../assets/image 30.png';
-import { useRef, useEffect } from 'react';
+import { useRef} from 'react';
 
 function Home7() {
     const scrollContainer = useRef(null);
@@ -56,15 +56,15 @@ function Home7() {
         <div className="mt-40 px-4">
             <div className="flex flex-col items-center">
                 <div className="text-center">
-                    <h1 className="text-[#1B75BB]">Beyondtech untuk Kamu</h1>
-                    <h1 className="font-bold text-2xl text-[#505050] mt-3">
+                    <h1 className="text-[#1B75BB] text-lg sm:text-xl">Beyondtech untuk Kamu</h1>
+                    <h1 className="font-semibold text-2xl md:text-3xl text-[#505050] mt-3">
                         Kirim & Terima
                     </h1>
-                    <p className="text-sm text-[#505050] mt-5">
+                    <p className="text-base text-[#505050] mt-5">
                         Kami memahami akan segala kebutuhan transaksi Anda melalui
                         infrastruktur fintech
                     </p>
-                    <p className="text-sm text-[#505050]">
+                    <p className="text-base text-[#505050]">
                         yang inovatif untuk memanfaatkan peluang baru yang muncul.
                     </p>
                 </div>
@@ -81,11 +81,11 @@ function Home7() {
                         {doubledCardData.map((card, index) => (
                             <div key={index} className="min-w-[280px] md:min-w-[320px] lg:min-w-[360px] max-w-xs rounded overflow-hidden shadow-lg">
                                 <div className="bg-[#1B75BB] flex items-center justify-center h-40">
-                                    <img className="h-28 object-contain" src={card.image} alt={card.title} />
+                                    <img className="w-full h-full" src={card.image} alt={card.title} />
                                 </div>
-                                <div className="px-6 py-4">
-                                    <div className="font-bold text-sm mb-2">{card.title}</div>
-                                    <p className="text-gray-700 text-xs">
+                                <div className="px-2 py-4">
+                                    <div className="font-bold text-base mb-2">{card.title}</div>
+                                    <p className="text-gray-700 text-sm">
                                         {card.description}
                                     </p>
                                 </div>

@@ -1,4 +1,5 @@
-import group7 from '../assets/Group 7.png';
+
+import group58682 from "../assets/Group 58682.png"
 
 function Home11() {
   return (
@@ -7,12 +8,12 @@ function Home11() {
         
         {/* Judul Visi Misi */}
         <div className="text-center mt-10">
-          <h1 className="font-bold text-[#505050] text-3xl">Visi Misi</h1>
+          <h1 className="font-semibold text-2xl md:text-3xl text-[#505050]">Visi Misi</h1>
         </div>
         
         {/* Gambar dengan lebar responsif */}
-        <div className="mt-10 w-full sm:w-3/4 md:w-3/4 lg:w-3/4">
-          <img src={group7} className="w-full h-auto" alt="Visi Misi" />
+        <div className="mt-10 flex justify-center items-center">
+          <img src={group58682} className="w-full sm:w-3/4 lg:w-11/12 h-auto" alt="Visi Misi" />
         </div>
       </div>
     </div>

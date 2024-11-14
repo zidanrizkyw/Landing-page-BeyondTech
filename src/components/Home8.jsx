@@ -1,19 +1,21 @@
+import checklist from "../assets/checklist.png"
+
 function Home8() {
   return (
     <div className="mt-40">
       <div className="flex flex-col justify-center px-4 md:px-10 lg:px-20">
         <div className="flex flex-col text-center">
-          <h1 className="text-sm text-[#1B75BB]">
+          <h1 className="text-[#1B75BB] text-xl">
             Berkembang Pesat Dengan Beyondtech
           </h1>
-          <h1 className="font-bold text-[#505050] text-2xl mt-3">
+          <h1 className="font-semibold  text-2xl md:text-3xl text-[#505050] mt-3">
             Operasional Bisnis
           </h1>
-          <p className="text-sm text-[#505050] mt-5">
+          <p className="text-base text-[#505050] mt-5">
             Lewati Kendala, lipat gandakan keuntungan Anda. Biarkan Anda Fokus
             dalam
           </p>
-          <p className="text-sm text-[#505050]">
+          <p className="text-base text-[#505050]">
             pengembangan usaha dan serahkan kebutuhan pembayaran Anda kepada
             kami
           </p>
@@ -21,7 +23,9 @@ function Home8() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10 mt-10">
           <div className="">
-            <div className="bg-[#1B75BB] rounded-full w-8 h-8"></div>
+            <div className="bg-[#1B75BB] rounded-full w-8 h-8">
+              <img src={checklist} alt="pic" className="w-full h-full p-2"/>
+            </div>
             <h1 className="font-bold text-base text-[#505050] mt-4">Metode Pembayaran</h1>
             <p className="text-sm text-[#505050] mt-3 mr-20">
               Tersedia lebih dari 20+ metode pembayaran seperti e-Wallet, Bank
@@ -29,7 +33,9 @@ function Home8() {
             </p>
           </div>
           <div className="md:ml-10">
-            <div className="bg-[#1B75BB] rounded-full w-8 h-8"></div>
+            <div className="bg-[#1B75BB] rounded-full w-8 h-8">
+            <img src={checklist} alt="pic" className="w-full h-full p-2"/>
+            </div>
             <h1 className="font-bold text-base text-[#505050] mt-4">Dukungan Penuh 24/7</h1>
             <p className="text-sm text-[#505050] mt-3 mr-20">
               Butuh bantuan? Jangan khawatir! Tim ahli kami siap membantu segala
@@ -37,7 +43,9 @@ function Home8() {
             </p>
           </div>
           <div className="">
-            <div className="bg-[#1B75BB] rounded-full w-8 h-8"></div>
+            <div className="bg-[#1B75BB] rounded-full w-8 h-8">
+            <img src={checklist} alt="pic" className="w-full h-full p-2"/>
+            </div>
             <h1 className="font-bold text-base text-[#505050] mt-4">Efisiensi melalui Otomatisasi</h1>
             <p className="text-sm text-[#505050] mt-3 mr-20">
               Tinggalkan beban kerja manual dengan pembayaran otomatis melalui
@@ -46,7 +54,9 @@ function Home8() {
             </p>
           </div>
           <div className="md:ml-10">
-            <div className="bg-[#1B75BB] rounded-full w-8 h-8"></div>
+            <div className="bg-[#1B75BB] rounded-full w-8 h-8">
+            <img src={checklist} alt="pic" className="w-full h-full p-2"/>
+            </div>
             <h1 className="font-bold text-base text-[#505050] mt-4">Integrasi Sesuai Kebutuhan</h1>
             <p className="text-sm text-[#505050] mt-3 mr-20">
               Nikmati fleksibilitas melalui plugin yang siap digunakan hingga
@@ -55,7 +65,9 @@ function Home8() {
             </p>
           </div>
           <div className="">
-            <div className="bg-[#1B75BB] rounded-full w-8 h-8"></div>
+            <div className="bg-[#1B75BB] rounded-full w-8 h-8">
+            <img src={checklist} alt="pic" className="w-full h-full p-2"/>
+            </div>
             <h1 className="font-bold text-base text-[#505050] mt-4">Manajemen Resiko</h1>
             <p className="text-sm text-[#505050] mt-3 mr-20">
               Dilengkapi dengan sistem keamanan yang berlisensi dari otoritas
@@ -63,7 +75,9 @@ function Home8() {
             </p>
           </div>
           <div className="md:ml-10">
-            <div className="bg-[#1B75BB] rounded-full w-8 h-8"></div>
+            <div className="bg-[#1B75BB] rounded-full w-8 h-8">
+            <img src={checklist} alt="pic" className="w-full h-full p-2"/>
+            </div>
             <h1 className="font-bold text-base text-[#505050] mt-4">Gratis Biaya Pendaftaran</h1>
             <p className="text-sm text-[#505050] mt-3 mr-20">
               Semua transparan. Anda hanya dikenakan biaya per transaksi sukses
