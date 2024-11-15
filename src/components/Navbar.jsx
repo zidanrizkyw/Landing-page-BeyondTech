@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../assets/logobeyondtech.png";
+import logo from "../assets/logobeyondtech.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronDown,
@@ -10,7 +10,6 @@ import {
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isPersonalDropdownOpen, setIsPersonalDropdownOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
 
   const handleDropdownToggle = (item) => {
@@ -26,7 +25,7 @@ function Navbar() {
       <div className=" flex items-center justify-between md:justify-start px-4 py-7 lg:px-20">
         {/* Logo */}
         <div className="flex items-center">
-          <img src={logo} alt="Logo" className="h-8 w-auto mr-7" />
+          <img src={logo} alt="Logo" className="h-8 w-auto mr-7" width={100} height={100}/>
         </div>
 
         {/* Hamburger Icon for Mobile */}
@@ -61,18 +60,7 @@ function Navbar() {
 
                 {/* Dropdown for "Personal" */}
                 {item === "Personal" && activeDropdown === "Personal" && (
-                  <div
-                    className="sm:fixed lg:absolute md:left-5 mt-2 bg-white text-gray-800 p-5 w-[700px] h-auto rounded shadow-lg z-50"
-                    onMouseEnter={() => {
-                      clearTimeout(window.dropdownTimeout);
-                      setIsPersonalDropdownOpen(true);
-                    }}
-                    onMouseLeave={() => {
-                      window.dropdownTimeout = setTimeout(() => {
-                        setIsPersonalDropdownOpen(false);
-                      }, 200);
-                    }}
-                  >
+                  <div className="sm:fixed lg:absolute md:left-5 mt-2 bg-white text-gray-800 p-5 w-[700px] h-auto rounded shadow-lg z-50">
                     <div className="flex flex-col gap-y-3">
                       <div>
                         <h1 className="font-bold text-[#1B75BB]">

@@ -1,8 +1,17 @@
-import checklist from "../assets/checklist.png"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
+import checklist from "../assets/checklist.webp"
 
 function Home8() {
+  useEffect(() => {
+    AOS.init(
+      {once: true}
+    );
+  }, [])
   return (
-    <div className="mt-40">
+    <div className="container mx-auto mt-40" data-aos="fade-up" data-aos-duration="500">
       <div className="flex flex-col justify-center px-4 md:px-10 lg:px-20">
         <div className="flex flex-col text-center">
           <h1 className="text-[#1B75BB] text-xl">
@@ -24,7 +33,7 @@ function Home8() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-10 mt-10">
           <div className="">
             <div className="bg-[#1B75BB] rounded-full w-8 h-8">
-              <img src={checklist} alt="pic" className="w-full h-full p-2"/>
+              <img src={checklist} alt="pic" className="w-full h-full p-2" width={100} height={100}/>
             </div>
             <h1 className="font-bold text-base text-[#505050] mt-4">Metode Pembayaran</h1>
             <p className="text-sm text-[#505050] mt-3 mr-20">
@@ -34,7 +43,7 @@ function Home8() {
           </div>
           <div className="md:ml-10">
             <div className="bg-[#1B75BB] rounded-full w-8 h-8">
-            <img src={checklist} alt="pic" className="w-full h-full p-2"/>
+            <img src={checklist} alt="pic" className="w-full h-full p-2" width={100} height={100}/>
             </div>
             <h1 className="font-bold text-base text-[#505050] mt-4">Dukungan Penuh 24/7</h1>
             <p className="text-sm text-[#505050] mt-3 mr-20">
@@ -44,7 +53,7 @@ function Home8() {
           </div>
           <div className="">
             <div className="bg-[#1B75BB] rounded-full w-8 h-8">
-            <img src={checklist} alt="pic" className="w-full h-full p-2"/>
+            <img src={checklist} alt="pic" className="w-full h-full p-2" width={100} height={100}/>
             </div>
             <h1 className="font-bold text-base text-[#505050] mt-4">Efisiensi melalui Otomatisasi</h1>
             <p className="text-sm text-[#505050] mt-3 mr-20">
@@ -55,7 +64,7 @@ function Home8() {
           </div>
           <div className="md:ml-10">
             <div className="bg-[#1B75BB] rounded-full w-8 h-8">
-            <img src={checklist} alt="pic" className="w-full h-full p-2"/>
+            <img src={checklist} alt="pic" className="w-full h-full p-2" width={100} height={100}/>
             </div>
             <h1 className="font-bold text-base text-[#505050] mt-4">Integrasi Sesuai Kebutuhan</h1>
             <p className="text-sm text-[#505050] mt-3 mr-20">
@@ -66,7 +75,7 @@ function Home8() {
           </div>
           <div className="">
             <div className="bg-[#1B75BB] rounded-full w-8 h-8">
-            <img src={checklist} alt="pic" className="w-full h-full p-2"/>
+            <img src={checklist} alt="pic" className="w-full h-full p-2" width={100} height={100}/>
             </div>
             <h1 className="font-bold text-base text-[#505050] mt-4">Manajemen Resiko</h1>
             <p className="text-sm text-[#505050] mt-3 mr-20">
@@ -76,7 +85,7 @@ function Home8() {
           </div>
           <div className="md:ml-10">
             <div className="bg-[#1B75BB] rounded-full w-8 h-8">
-            <img src={checklist} alt="pic" className="w-full h-full p-2"/>
+            <img src={checklist} alt="pic" className="w-full h-full p-2" width={100} height={100}/>
             </div>
             <h1 className="font-bold text-base text-[#505050] mt-4">Gratis Biaya Pendaftaran</h1>
             <p className="text-sm text-[#505050] mt-3 mr-20">

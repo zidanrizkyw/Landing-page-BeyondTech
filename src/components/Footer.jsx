@@ -1,4 +1,4 @@
-import layer1 from "../assets/Layer_1.png";
+import layer1 from "../assets/Layer_1.webp";
 import facebook from "../assets/Facebook.png";
 import twitter from "../assets/Twitter.png";
 import instagram from "../assets/Instagram.png";
@@ -8,7 +8,7 @@ function Footer() {
     <div className="mt-20">
       <div className="flex flex-col lg:flex-row justify-center bg-[#003C6A] lg:space-x-10 p-5">
         <div className="flex flex-col items-center lg:items-start mt-5 lg:mt-20 lg:ml-10 w-full lg:w-1/3 text-center lg:text-left">
-          <img src={layer1} />
+          <img  alt="beyondtech" src={layer1} width={100} height={100} />
           <p className="text-sm text-[#FFFFFF] mt-10">
             Track your card order effortlessly!
           </p>
@@ -22,9 +22,9 @@ function Footer() {
             Simplify tracking with Hamilton.
           </p>
           <div className="flex flex-row mt-4 lg:mt-10">
-            <img src={facebook} />
-            <img src={twitter} />
-            <img src={instagram} />
+            <img alt="facebook" src={facebook} width={100} height={100}/>
+            <img alt="twitter" src={twitter} width={100} height={100}/>
+            <img alt="instagram" src={instagram} width={100} height={100}/>
           </div>
         </div>
         <div className="w-full lg:w-1/3 mt-10 lg:mt-20 space-y-5">

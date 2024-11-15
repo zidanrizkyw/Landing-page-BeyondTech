@@ -1,7 +1,16 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
 function Home13() {
+  useEffect(() => {
+    AOS.init(
+      {once: true}
+    );
+  }, [])
   return (
-    <div className="ml-10 mr-10 mt-40 mb-10">
-      <div className="flex flex-col lg:flex-row justify-center items-center  bg-[#1B75BB] rounded-2xl pb-16 mt-20 lg:space-x-96">
+    <div className="container mx-auto mt-20" data-aos="fade-up" data-aos-duration="500">
+      <div className="flex flex-col lg:flex-row justify-center items-center  bg-[#1B75BB] rounded-2xl pb-16 ml-10 mr-10  lg:space-x-96">
         <div className="mt-20">
           <h1 className="font-bold text-2xl md:text-4xl text-[#FFFFFF] sm:text-center ">
             Mulai Berkembang Pesat 

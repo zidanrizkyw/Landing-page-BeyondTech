@@ -1,6 +1,15 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
 function Home12() {
+    useEffect(() => {
+        AOS.init(
+          {once: true}
+        );
+      }, [])
     return (
-        <div className="mt-40 ml-10">
+        <div className="container mx-auto mt-40 ml-10" data-aos="fade-up" data-aos-duration="500">
             <div className="mt-10">
                 <div className=" flex flex-col justify-center text-center mr-10 md:mr-0">
                     <h1 className="font-bold text-xl md:text-3xl text-[#505050]">BeyondTech menghilangkan proses</h1>

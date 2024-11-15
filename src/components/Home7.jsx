@@ -1,10 +1,19 @@
-import image28 from '../assets/image 28.png';
-import image29 from '../assets/image 29.png';
-import image27 from '../assets/image 27.png';
-import image30 from '../assets/image 30.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
+import image28 from '../assets/image 28.webp';
+import image29 from '../assets/image 29.webp';
+import image27 from '../assets/image 27.webp';
+import image30 from '../assets/image 30.webp';
 import { useRef} from 'react';
 
 function Home7() {
+    useEffect(() => {
+        AOS.init(
+          {once: true}
+        );
+      }, [])
     const scrollContainer = useRef(null);
 
     const scrollLeft = () => {
@@ -53,7 +62,7 @@ function Home7() {
     const doubledCardData = [...cardData, ...cardData];
 
     return (
-        <div className="mt-40 px-4">
+        <div className="container mx-auto mt-40 px-4" data-aos="fade-up" data-aos-duration="500">
             <div className="flex flex-col items-center">
                 <div className="text-center">
                     <h1 className="text-[#1B75BB] text-lg sm:text-xl">Beyondtech untuk Kamu</h1>
@@ -81,7 +90,7 @@ function Home7() {
                         {doubledCardData.map((card, index) => (
                             <div key={index} className="min-w-[280px] md:min-w-[320px] lg:min-w-[360px] max-w-xs rounded overflow-hidden shadow-lg">
                                 <div className="bg-[#1B75BB] flex items-center justify-center h-40">
-                                    <img className="w-full h-full" src={card.image} alt={card.title} />
+                                    <img className="w-full h-full" src={card.image} alt={card.title} width={100} height={100}/>
                                 </div>
                                 <div className="px-2 py-4">
                                     <div className="font-bold text-base mb-2">{card.title}</div>

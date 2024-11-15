@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 
 *{
   font-family: "Inter", sans-serif;
@@ -12,24 +12,6 @@
 
 html, body {
   overflow-x: hidden;
-}
-
-.poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.poppins-semibold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.poppins-bold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
 }
 
 /* #home1{
@@ -57,9 +39,13 @@ html, body {
   }
 }
 
+
 .animate-slide {
-  animation: slide 20s linear infinite;
+  animation: slide 15s linear infinite;
 }
+
+
+
 
 
 /* Hide scrollbar */

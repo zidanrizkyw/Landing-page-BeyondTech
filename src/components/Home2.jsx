@@ -1,17 +1,29 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
+
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import wsunion from "../assets/western-union-logo-png_seeklogo-524395 1.png";
-import moneygram from "../assets/moneygram.png";
-import transwap from "../assets/transwap.png";
-import cimbniaga from "../assets/cimb 1.png";
-import bca from "../assets/logo bca 1.png";
-import ria from "../assets/Ria.png";
-import topremit from "../assets/Topremit.png";
-import brdgx from "../assets/Brdgx.png";
+import wsunion from "../assets/western.webp";
+import moneygram from "../assets/moneygram.webp";
+import transwap from "../assets/transwap.webp";
+import cimbniaga from "../assets/cimb.webp";
+import bca from "../assets/bca.webp";
+// import ria from "../assets/Ria.png";
+// import topremit from "../assets/Topremit.png";
+// import brdgx from "../assets/Brdgx.png";
 
 function Home2() {
+
+  useEffect(() => {
+    AOS.init(
+      {once: true}
+    );
+  }, [])
+
   return (
-    <div className="sm:pb-20 relative z-10">
+    <div className="sm:pb-20 relative z-10" data-aos="fade-up" data-aos-duration="500">
       <div className="flex flex-col md:flex-row justify-center md:space-x-36 space-y-6 md:space-y-0 py-12 bg-[#EC2027] text-white text-center">
         <div>
           <h1 className="font-bold text-xl md:text-2xl">
@@ -60,33 +72,23 @@ function Home2() {
       </div>
 
       {/* Container for the images with proper sizing */}
-      <div className="overflow-hidden  animate-slide py-7 md:py-5 ">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-8 lg:flex justify-center items-center md:gap-8 w-full h-full">
-          <div className="w-40 h-[100px] md:w-44 lg:w-96 lg:h-[125px] flex items-center ">
-            <img src={moneygram} alt="Moneygram" className="lg:object-contain w-full h-full" />
-          </div>
-          <div className="w-40 h-[25px] md:w-44  lg:w-96 lg:h-[125px] flex items-center">
-            <img src={wsunion} alt="Western Union" className="lg:object-contain w-full h-full" />
-          </div>
-          <div className="w-36 h-[35px] md:w-44 lg:w-96 lg:h-[125px] flex items-center">
-            <img src={transwap} alt="Transwap" className="lg:object-contain w-full h-full"/>
-          </div>
-          <div className="w-36 h-[25px] md:w-44  lg:w-96 lg:h-[125px] flex items-center">
-            <img src={cimbniaga} alt="CIMB Niaga" className="lg:object-contain w-full h-full sm:ml-2 md:ml-0" />
-          </div>
-          <div className="w-32 h-[90px] md:w-40  lg:w-64 lg:h-[125px] flex items-center">
-            <img src={bca} alt="BCA" className="lg:object-contain w-full h-full"/>
-          </div>
-          <div className="w-40 h-[65px] md:w-44  lg:w-72 lg:h-[125px] flex items-center">
-            <img src={ria} alt="Ria" className="lg:object-contain w-full h-full sm:ml-2 md:ml-0"/>
-          </div>
-          <div className="w-32 h-[35px] md:w-40  lg:w-72 lg:h-[125px] flex items-center">
-            <img src={topremit} alt="Topremit" className="lg:object-contain w-full h-full "/>
-          </div>
-          <div className="w-32 h-[45px] md:w-36 lg:w-64 lg:h-[125px] flex items-center">
-            <img src={brdgx} alt="Brdgx" className="lg:object-contain w-full h-full sm:ml-6 md:ml-0"/>
-          </div>
+      <div className="animate-slide flex flex-row justify-center items-center py-10 space-x-12">
+        <div className="min-w-[200px] ">
+          <img alt="moneygram" src={moneygram} className="w-full h-full" width={100} height={100}/>
         </div>
+        <div className="min-w-[200px]">
+          <img alt="Western Union" src={wsunion} className="w-full h-full" width={100} height={100}/>
+        </div>
+        <div className="min-w-[200px]">
+          <img alt="Transwap" src={transwap} className="w-full h-full" width={100} height={100}/>
+        </div>
+        <div className="min-w-[200px]">
+          <img alt="CIMB Niaga" src={cimbniaga} className="w-full h-full" width={100} height={100}/>
+        </div>
+        <div className="min-w-[125px]">
+          <img alt="BCA" src={bca} className="w-full h-full" width={100} height={100}/>
+        </div>
+        
       </div>
     </div>
   );

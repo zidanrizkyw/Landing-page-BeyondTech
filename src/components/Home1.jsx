@@ -1,9 +1,11 @@
-import gambar from "../assets/mockup-beyondtech2 1.png";
+
+import gambar from "../assets/mockup-beyondtech2.webp";
+
 
 function Home1() {
   return (
     <div className="pt-20">
-      <div className="flex flex-col md:flex-row justify-center items-center pt-10 z-0">
+      <div className="container mx-auto flex flex-col md:flex-row justify-center items-center pt-10 z-0">
         <div className="content-center max-w-[600px] pb-14 md:ml-5 lg:ml-0">
           <h1 className="font-bold text-4xl lg:text-6xl  text-center md:text-left">
             <span className="text-[#EC2027]">Kirim</span>{" "}
@@ -25,7 +27,7 @@ function Home1() {
           </p>
         </div>
         <div className="max-w-[500px] pt-8 z-10">
-          <img src={gambar} alt="Mockup" className="w-full h-auto" />
+          <img src={gambar} alt="Mockup" className="w-full h-auto" width={100} height={100} />
         </div>
 
         {/* Lingkaran yang hanya muncul di layar menengah ke atas */}

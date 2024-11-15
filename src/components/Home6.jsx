@@ -1,8 +1,17 @@
-import group58681 from "../assets/Group 58681.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
+import group58681 from "../assets/Group 58681.webp";
 
 function Home6() {
+  useEffect(() => {
+    AOS.init(
+      {once: true}
+    );
+  }, [])
   return (
-    <div className="mt-36 px-4 md:px-8 lg:px-16">
+    <div className="container mx-auto mt-36 px-4 md:px-8 lg:px-16" data-aos="fade-up" data-aos-duration="500">
       <div className="flex flex-col justify-center">
         <div className="text-center">
           <h1 className="text-[#1B75BB] text-xl">Features</h1>
@@ -24,7 +33,7 @@ function Home6() {
             </p>
           </div>
           <div className="flex justify-center mt-20">
-            <img src={group58681} alt="pic" className="w-full sm:w-3/4 lg:w-11/12 h-auto" />
+            <img src={group58681} alt="pic" className="w-full sm:w-3/4 lg:w-11/12 h-auto" width={100} height={100}/>
           </div>
         </div>
       </div>

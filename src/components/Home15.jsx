@@ -1,8 +1,16 @@
-import image8 from '../assets/image 8.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+import image8 from '../assets/image 8.webp'
 
 function Home15() {
+  useEffect(() => {
+    AOS.init(
+      {once: true}
+    );
+  }, [])
   return (
-    <div className="mt-40 ml-10 mr-10 mb-10">
+    <div className="container mx-auto mt-40 ml-10 mr-10 mb-10" data-aos="fade-up" data-aos-duration="500">
       <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-5">
         <div>
           <h1 className='font-bold text-3xl text-[#505050]'>Frequently</h1>
@@ -38,7 +46,7 @@ function Home15() {
           </div>
         </div>
         <div className=' flex items-end w-3/4'>
-            <img src={image8} className='w-full h-auto'/>
+            <img  alt="man" src={image8} className='w-full h-auto' width={100} height={100}/>
         </div>
       </div>
     </div>

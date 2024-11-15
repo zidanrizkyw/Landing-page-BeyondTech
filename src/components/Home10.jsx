@@ -1,9 +1,16 @@
-
-import pichome10 from "../assets/pichome10.png"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+import pichome10 from "../assets/pichome10.webp"
 
 function Home10() {
+  useEffect(() => {
+    AOS.init(
+      {once: true}
+    );
+  }, [])
   return (
-    <div className="mt-40 px-4 md:px-10 lg:px-10">
+    <div className="container mx-auto mt-40 px-4 md:px-10 lg:px-10" data-aos="fade-up" data-aos-duration="500">
       <div className="flex flex-col justify-center">
         <div>
           <h1 className="font-semibold text-2xl md:text-3xl text-[#505050] text-center">
@@ -31,7 +38,7 @@ function Home10() {
 
           {/* Kolom gambar */}
           <div className="w-full md:w-1/2">
-            <img src={pichome10} className="w-full h-auto rounded-lg" alt="Tentang Kami" />
+            <img src={pichome10} className="w-full h-auto rounded-lg" alt="Tentang Kami" width={100} height={100}/>
           </div>
         </div>
       </div>

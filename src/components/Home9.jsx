@@ -1,6 +1,15 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
 function Home9() {
+  useEffect(() => {
+    AOS.init(
+      {once: true}
+    );
+  }, [])
     return (
-      <div className="mt-36 px-4 md:px-10 lg:px-20">
+      <div className="container mx-auto mt-36 px-4 md:px-10 lg:px-20" data-aos="fade-up" data-aos-duration="500">
         <div className="flex flex-col justify-center">
           <div className="text-center mt-10">
             <h1 className="font-bold text-2xl">

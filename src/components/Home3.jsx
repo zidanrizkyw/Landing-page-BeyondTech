@@ -1,9 +1,18 @@
-import group58677 from "../assets/Group 58677.png";
-import vector from "../assets/Vector.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
+import group58677 from "../assets/Group 58677.webp";
+import vector from "../assets/Vector.webp";
 
 function Home3() {
+  useEffect(() => {
+    AOS.init(
+      {once: true}
+    );
+  }, [])
   return (
-    <div className=" mt-20 px-4 sm:px-8 lg:px-16">
+    <div className="container mx-auto mt-20 px-4 sm:px-8 lg:px-16" data-aos="fade-up" data-aos-duration="500">
       <div className="flex justify-center">
         <div>
           <h1 className="text-[#1B75BB] text-center">Features</h1>
@@ -49,6 +58,8 @@ function Home3() {
                 src={vector}
                 alt="logo contreng"
                 className="w-[20px] h-[20px] mt-2"
+                width={100}
+                height={100}
               />
               <div className="text-sm text-[#505050]">
                 <p>
@@ -63,6 +74,8 @@ function Home3() {
                 src={vector}
                 alt="logo contreng"
                 className="w-[20px] h-[20px] mt-2"
+                width={100}
+                height={100}
               />
               <div className="text-sm text-[#505050]">
                 <p>
@@ -77,6 +90,8 @@ function Home3() {
                 src={vector}
                 alt="logo contreng"
                 className="w-[20px] h-[20px] mt-2"
+                width={100}
+                height={100}
               />
               <div className="text-sm text-[#505050]">
                 <p>Tersedia Integrasi dengan API untuk pembuatan link dalam</p>
@@ -91,6 +106,8 @@ function Home3() {
                 src={vector}
                 alt="logo contreng"
                 className="w-[20px] h-[20px] mt-1"
+                width={100}
+                height={100}
               />
               <div className="text-sm text-[#505050]">
                 <p>
@@ -106,6 +123,8 @@ function Home3() {
             src={group58677}
             alt="Illustration"
             className="w-full sm:w-3/4 lg:w-full h-auto"
+            width={100}
+            height={100}
           />
         </div>
       </div>

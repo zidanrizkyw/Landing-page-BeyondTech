@@ -1,20 +1,32 @@
-import group58679 from "../assets/Group 58679.png";
-import pichome5 from "../assets/pichome5.png";
-import pic2home5 from "../assets/pic2home5.png";
-import pic3home5 from "../assets/pic3home5.png";
-import pic4home5 from "../assets/pic4home5.png";
-import pic5home5 from "../assets/pic5home5.png";
-import pic6home5 from "../assets/pic6home5.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
+
+import group58679 from "../assets/Group 58679.webp";
+import pichome5 from "../assets/pichome5.webp";
+import pic2home5 from "../assets/pic2home5.webp";
+import pic3home5 from "../assets/pic3home5.webp";
+import pic4home5 from "../assets/pic4home5.webp";
+import pic5home5 from "../assets/pic5home5.webp";
+import pic6home5 from "../assets/pic6home5.webp";
 
 function Home4() {
+  useEffect(() => {
+    AOS.init(
+      {once: true}
+    );
+  }, [])
   return (
-    <div className="px-4 lg:px-16 mt-36">
+    <div className="container mx-auto px-4 lg:px-16 mt-36" data-aos="fade-up" data-aos-duration="500">
       <div className="flex flex-col lg:flex-row justify-center lg:space-x-5 lg:space-y-0 space-y-24">
         <div className="flex justify-center items-center w-full lg:w-1/2 mt-7">
           <img
             src={group58679}
             alt="pic"
             className="w-full sm:w-3/4 lg:w-full h-auto"
+            width={100}
+            height={100}
           />
         </div>
         <div className="w-full lg:w-1/2 ml-auto">
@@ -37,6 +49,8 @@ function Home4() {
                 src={pichome5}
                 alt="pic"
                 className=" bg-[#F7FCFF] p-2 w-14 rounded"
+                width={100}
+                height={100}
               />
               <p className="text-xs text-center text-[#505050]">
                 Cukup sekali konfirmasi untuk kirim ke banyak tujuan
@@ -47,6 +61,8 @@ function Home4() {
                 src={pic2home5}
                 alt="pic"
                 className="bg-[#F7FCFF] p-2 w-14 rounded"
+                width={100}
+                height={100}
               />
               <p className="text-xs text-center text-[#505050]">
                 Pembayaran diproses secara real-time tanpa tertunda
@@ -57,6 +73,8 @@ function Home4() {
                 src={pic3home5}
                 alt="pic"
                 className="bg-[#F7FCFF] p-2 w-14 rounded"
+                width={100}
+                height={100}
               />
               <p className="text-xs text-center text-[#505050]">
                 Bayar per pengiriman dana tanpa tambahan biaya
@@ -67,6 +85,8 @@ function Home4() {
                 src={pic4home5}
                 alt="pic"
                 className="bg-[#F7FCFF] p-2 w-14 rounded"
+                width={100}
+                height={100}
               />
               <p className="text-xs text-center text-[#505050]">
                 Integrasi dan penggunaan yang mudah, kompatibel dengan sistem
@@ -78,6 +98,8 @@ function Home4() {
                 src={pic5home5}
                 alt="pic"
                 className="bg-[#F7FCFF] p-2 w-14 rounded"
+                width={100}
+                height={100}
               />
               <p className="text-xs text-center text-[#505050]">
                 Fitur keamanan berlapis setara dengan bank untuk menjamin
@@ -89,6 +111,8 @@ function Home4() {
                 src={pic6home5}
                 alt="pic"
                 className="bg-[#F7FCFF] p-2 w-14 rounded"
+                width={100}
+                height={100}
               />
               <p className="text-xs text-center text-[#505050]">
                 Validasi rekening bank untuk mengurangi kesalahan pembayaran

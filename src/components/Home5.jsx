@@ -1,9 +1,18 @@
-import pichomee from "../assets/pichomee.png";
-import vector from "../assets/Vector.png"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
+import pichomee from "../assets/pichomee.webp";
+import vector from "../assets/Vector.webp";
 
 function Home5() {
+  useEffect(() => {
+    AOS.init(
+      {once: true}
+    );
+  }, [])
   return (
-    <div className="mt-36 px-4 lg:px-16">
+    <div className="container mx-auto mt-36 px-4 lg:px-16" data-aos="fade-up" data-aos-duration="500">
       <div className="flex flex-col lg:flex-row justify-center items-start space-y-16 lg:space-x-5 lg:space-y-0">
         <div className="w-full lg:w-3/5">
           <h1 className="text-[#1B75BB] text-xl">REMITTANCE</h1>
@@ -13,7 +22,9 @@ function Home5() {
           <h1 className="font-semibold text-xl md:text-3xl text-[#505050]">
             Transfer Dana dari Indonesia ke 200+
           </h1>
-          <h1 className="font-semibold text-xl md:text-3xl text-[#505050]">Negara</h1>
+          <h1 className="font-semibold text-xl md:text-3xl text-[#505050]">
+            Negara
+          </h1>
           <p className="mt-3 text-base text-[#505050]">
             Solusi berupa Platform pengiriman uang yang terintegrasi dengan
             seluruh bank yang terhubung dengan principal / bank switching yang
@@ -21,34 +32,86 @@ function Home5() {
           </p>
           <div className="mt-5 space-y-5">
             <div className="flex flex-row gap-4">
-              <img alt="pic" src={vector} className="w-[20px] h-[20px]"/>
+              <img
+                alt="pic"
+                src={vector}
+                className="w-[20px] h-[20px]"
+                width={100}
+                height={100}
+              />
               <p className="text-sm text-[#505050]">Support 200+ Mata Uang</p>
             </div>
             <div className="flex flex-row gap-4">
-              <img alt="pic" src={vector} className="w-[20px] h-[20px]"/>
-              <p className="text-sm text-[#505050]">Dana bisa sampai di hari yang sama</p>
+              <img
+                alt="pic"
+                src={vector}
+                className="w-[20px] h-[20px]"
+                width={100}
+                height={100}
+              />
+              <p className="text-sm text-[#505050]">
+                Dana bisa sampai di hari yang sama
+              </p>
             </div>
             <div className="flex flex-row gap-4">
-              <img alt="pic" src={vector} className="w-[20px] h-[20px]"/>
-              <p className="text-sm text-[#505050]">Dana Dapat Di Terima Full tanpa potongan</p>
+              <img
+                alt="pic"
+                src={vector}
+                className="w-[20px] h-[20px]"
+                width={100}
+                height={100}
+              />
+              <p className="text-sm text-[#505050]">
+                Dana Dapat Di Terima Full tanpa potongan
+              </p>
             </div>
             <div className="flex flex-row gap-4">
-              <img alt="pic" src={vector} className="w-[20px] h-[20px]"/>
-              <p className="text-sm text-[#505050]">Kurs dan biaya sangat kompetitif</p>
+              <img
+                alt="pic"
+                src={vector}
+                className="w-[20px] h-[20px]"
+                width={100}
+                height={100}
+              />
+              <p className="text-sm text-[#505050]">
+                Kurs dan biaya sangat kompetitif
+              </p>
             </div>
             <div className="flex flex-row gap-4">
-              <img alt="pic" src={vector} className="w-[20px] h-[20px]"/>
-              <p className="text-sm text-[#505050]">Stabil untuk mengurangi resiko kerugian</p>
+              <img
+                alt="pic"
+                src={vector}
+                className="w-[20px] h-[20px]"
+                width={100}
+                height={100}
+              />
+              <p className="text-sm text-[#505050]">
+                Stabil untuk mengurangi resiko kerugian
+              </p>
             </div>
             <div className="flex flex-row gap-4">
-              <img alt="pic" src={vector} className="w-[20px] h-[20px]"/>
-              <p className="text-sm text-[#505050]">Aman dengan Lisensi Resmi Bank Indonesia</p>
+              <img
+                alt="pic"
+                src={vector}
+                className="w-[20px] h-[20px]"
+                width={100}
+                height={100}
+              />
+              <p className="text-sm text-[#505050]">
+                Aman dengan Lisensi Resmi Bank Indonesia
+              </p>
             </div>
           </div>
         </div>
 
         <div className="w-full lg:w-1/2 flex justify-center items-center">
-          <img src={pichomee} alt="pic" className="w-full sm:w-3/4 lg:w-full h-auto" />
+          <img
+            src={pichomee}
+            alt="pic"
+            className="w-full sm:w-3/4 lg:w-full h-auto"
+            width={100}
+            height={100}
+          />
         </div>
       </div>
     </div>
